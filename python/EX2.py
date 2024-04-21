@@ -74,7 +74,7 @@ def symbols_above_percentage(file_path, percentage):
 
 
 percentage = 40
-symbols_above_percentage_dict = symbols_above_percentage("input.txt", percentage)
+symbols_above_percentage_dict = symbols_above_percentage("input2.txt", percentage)
 print("Símbolos com frequência acima de", percentage, "%:")
 for symbol, frequency in symbols_above_percentage_dict.items():
     print(f"Símbolo: {symbol}, Frequência: {frequency:.2f}%")
