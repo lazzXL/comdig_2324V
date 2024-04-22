@@ -32,9 +32,9 @@ def symbol_info(list_of_file_path):
         freq = {}
         for char, char_count in count.items():
             freq = char_count / len(all_symbols)
-            infprop = math.log(1 / freq, 2)
+            infprop = math.log2(1 / freq)
             print(f"informação própria de '{char}' =", infprop)
-            entropia += infprop
+            entropia += infprop * freq
 
         print("entropia=", entropia)
 
