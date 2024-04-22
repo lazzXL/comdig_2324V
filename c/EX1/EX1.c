@@ -116,16 +116,7 @@ void reverse_file(char *input_file_name, char *output_file_name) {
 }
 
 int main() {
-    count_bits(8);
-    print_fibonacci(6);
-
-
-    file_symbol_freq("a.txt", 'a');
-    file_histogram("a.txt");
-    // Chamada da função para reverter o arquivo
-    reverse_file("a.txt", "output.txt");
-
-    printf("Arquivo revertido com sucesso.\n");
+    file_histogram("input.txt");
 
     return 0;
 }
